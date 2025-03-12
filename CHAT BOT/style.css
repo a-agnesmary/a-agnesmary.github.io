@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2122246b;
+}
+.container{
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #994daa33 0px 7px 29px 0px;
+    background: #363a41;
+}
+.title{
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+}
+.chat{
+    height: 400px;
+    overflow-y: scroll;
+    margin: 20px 0px;
+    padding: 10px;
+    border: 2px solid #545250;
+    border-radius: 10px;
+    background: #6b6e7456;
+}
+.message{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+.user { 
+    justify-content: flex-end;
+    text-align: right; 
+    }
+.bot { 
+    justify-content: flex-start; 
+    text-align: left; 
+}
+
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+.user .avatar{
+    order: 2;
+    background: url(user.png);
+    background-size: cover;
+}
+.bot .avatar{
+    order: 1;
+    background: url(chatBot.png);
+    background-size: cover;
+}
+.user .text{
+    background: #96a0b3c9;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 17px;
+}
+.bot .text{
+    background: #cacacc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 17px;
+}
+.input-text{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cbcbce;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+}
+.input-text:focus{
+    border-color: #8194cf;
+    color: black;
+}
+.button{
+    position: absolute;
+    width: 80px;
+    border : none;
+    padding: 1px;
+    background: #363a41;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -0.6rem;
+    margin-left: -4.1rem;
+    outline: none;
+}
+.button span{
+    font-size: 3rem;
+}
+.button:hover{
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+.chat::-webkit-scrollbar{
+    width: 10px;
+}
+.chat::-webkit-scrollbar-thumb{
+    background: #bcbdc0;
+    border-radius: 10px;
+}
