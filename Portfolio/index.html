@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Scroll to Top Button -->
+<button id="topBtn" onclick="scrollToTop()">⬆️</button>
+
+<!-- Header -->
+<header class="header">
+  <div class="header-container">
+    <div class="logo">My Portfolio</div>
+    <nav class="navbar" id="navbar">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Home Section -->
+<section id="home" class="home-section" style="animation-delay: 0.2s;">
+  <div class="content">
+    <h1>Hi, I'm <span class="highlight-name">Agnesmary A</span></h1>
+    <p class="typing">Java Developer | FrontEnd | Problem Solver</p>
+    <a href="#contact" class="btn">Get in Touch</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section" style="animation-delay: 0.4s;">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I’m Agnesmary A, a 2024 Electronics and Communication Engineering graduate from JP College of Engineering.
+      I’m passionate about software development and enjoy building responsive web apps and smart systems using technologies like Java, JavaScript, HTML, CSS, and MySQL.
+    </p>
+    <div class="about-grid">
+      <div class="education">
+        <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+        <ul>
+          <li><strong>B.E. Electronics and Communication</strong><br>JP College of Engineering, 2020–2024<br>CGPA: 8.50</li>
+          <li><strong>HSC</strong> – Baren Bruck HSS, 2017–2020<br>Percentage: 70%</li>
+          <li><strong>SSLC</strong> – TN State Board<br>Percentage: 91%</li>
+        </ul>
+      </div>
+      <div class="skills">
+        <h3><i class="fas fa-tools"></i> Skills</h3>
+        <ul>
+          <li><i class="fab fa-java"></i> Java</li>
+          <li><i class="fab fa-html5"></i> HTML & CSS</li>
+          <li><i class="fab fa-js"></i> JavaScript</li>
+          <li><i class="fas fa-code"></i> C Programming</li>
+          <li><i class="fas fa-database"></i> MySQL</li>
+          <li><i class="fas fa-magic"></i> Deluge</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Work Section -->
+<section id="work" class="work-section" style="animation-delay: 0.6s;">
+  <div class="container">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>India Map </h3>
+        <p>Interactive map showing Indian states and their details. Built using HTML, CSS, and JavaScript with hover effects and data popups.</p>
+        <div class="project-buttons">
+          <a href="https://your-demo-link.com/india-map" class="project-btn" target="_blank">View Demo</a>
+          <a href="https://github.com/yourusername/india-map-project" class="project-btn" target="_blank">Source Code</a>
+        </div>
+      </div>      
+      <div class="project-card">
+        <h3>Memory Game</h3>
+        <p>Interactive card-matching game using HTML, CSS, and JavaScript. Tracks moves and flips cards with clean animations.</p>
+        <a href="https://your-demo-link.com" class="project-btn" target="_blank">View Demo</a>
+        <a href="https://your-demo-link.com/memory-game" target="_blank" class="project-btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Hotel Booking System</h3>
+        <p>Built in Zoho Creator using Deluge. Manages hotel rooms, guests, and bookings with real-time update features.</p>
+        <a href="https://your-demo-link.com" class="project-btn" target="_blank">View Demo</a>
+        <a href="https://github.com/yourusername/hotel-booking-system" target="_blank" class="project-btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Recipe Book</h3>
+        <p>Responsive web app using TheMealDB API to search and explore various recipes by category and ingredient.</p>
+        <a href="https://your-demo-link.com" class="project-btn" target="_blank">View Demo</a>
+        <a href="https://github.com/yourusername/recipe-book" target="_blank" class="project-btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Expense Tracker</h3>
+        <p>Track your income and expenses with real-time total calculation. Built with CRUD features and simple UI logic.</p>
+        <a href="https://your-demo-link.com" class="project-btn" target="_blank">View Demo</a>
+        <a href="https://github.com/yourusername/expense-tracker" target="_blank" class="project-btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>To-Do List App</h3>
+        <p>A simple task manager with options to add, update, and delete tasks. Built using modern frontend techniques.</p>
+        <a href="https://your-demo-link.com" class="project-btn" target="_blank">View Demo</a>
+        <a href="https://github.com/yourusername/todo-list" target="_blank" class="project-btn">View Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>If you'd like to work together or have any questions, feel free to reach out!</p>
+
+    <div class="contact-info">
+      <p><i class="fas fa-envelope"></i> agneshmaryalbert@gmail.com</p>
+      <p><i class="fas fa-phone"></i> 9360236818</p>
+    </div>
+
+    <!-- Social Icons -->
+    <div class="social-icons">
+      <a href="https://github.com/your-github-username" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/your-linkedin-id" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://leetcode.com/your-leetcode-username" target="_blank" title="LeetCode">
+        <i class="fas fa-code"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<script>
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  window.onscroll = () => {
+    const btn = document.getElementById('topBtn');
+    btn.classList.toggle("show", window.scrollY > 100);
+  };
+</script>
+
+</body>
+</html>
