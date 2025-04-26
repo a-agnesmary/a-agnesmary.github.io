@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Online Recipe Book</h1>
+        <input type="text" id="searchBox" placeholder="Search for a recipe...">
+        <button onclick="searchRecipe(searchBox.value.trim())">Search</button>
+        <div class="container-child">
+            <select id="letter-select">
+                <option value="">-- Select First Letter --</option>
+            </select>
+            <select id="area-select">
+                <option value="">-- Select Area --</option>
+            </select>
+            <select id="category-select">
+                <option value="">-- Select Category --</option>
+            </select>
+            <button id="random-btn">🍽️ Random Meal</button>
+        </div>
+    </header>
+
+    <div id="letter-filter">
+        <!-- Letters A to Z -->
+    </div>
+
+    <div id="recipe-container" class="recipe-container">
+        <!-- RECEIPE -->
+    </div>
+
+    <!-- FOR SHOW THE RECIPE INGREDIENTS -->
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <h2 id="modal-title"></h2>
+          <img id="modal-img" src="" alt="">
+          <p id="modal-instructions"></p>
+          <ul id="modal-ingredients"></ul>
+        </div>
+    </div>
+      
+    
+    <script src="script.js"></script>
+</body>
+</html>
