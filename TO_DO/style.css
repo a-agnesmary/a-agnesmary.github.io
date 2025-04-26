@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: filter 0.3s ease;
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: filter 0.3s ease;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+#task-add-btn {
+    background: rgb(0, 0, 255);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    border-radius: 50%;
+    margin-left: 330px;
+    margin-top: 100px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+#task-add-btn:hover{
+   background-color: rgba(0, 0, 255, 0.658);
+}
+
+#task-add{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.content-add-btn{
+    margin-top: 10px;
+}
+
+.content-add-btn button{
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s; 
+}
+
+#content input{
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.conten-add-btn button{
+    margin: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    outline: none;
+}
+#saveTask {
+    background: green;
+    color: white;
+}
+
+#closeTask {
+    background: red;
+    color: white;
+}
+
+.task{
+    background: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task-description {
+    flex: 1;
+    text-align: left;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.task-buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.task-buttons button {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.complete-btn {
+    background: green;
+    color: white;
+}
+
+.edit-btn {
+    background: orange;
+    color: white;
+}
+
+.delete-btn {
+    background: red;
+    color: white;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+    position: relative;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 10px;
+    background: #4CAF50;
+    transition: width 0.5s ease-in-out;
+}
+
+#progressText {
+    font-size: 14px;
+    color: #333;
+    margin-top: 5px;
+}
